@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>زكريا هليب التعليمية</title>
+  <meta name="description" content="صفحة روابط سريعة للوصول إلى واتساب، تيليجرام، والمنصات الاجتماعية." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#300010; --bg2:#5a0b1f; --card:#1b1b1f; --text:#fff; --muted:#cfcfd6;
+      --accent:#ffd166; --btn:#2a2a30; --btnHover:#3a3a42; --ring:#8a8a94;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100svh; color:var(--text); font-family:'Cairo', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 50% -10%, var(--bg2), var(--bg1));
+      display:grid; place-items:center; padding:28px 16px;
+    }
+    .wrap{width:min(720px, 100%);}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:calc(var(--radius) + 8px);
+      box-shadow:var(--shadow);
+      padding:28px 18px 22px; backdrop-filter: blur(6px);
+    }
+    .brand{display:flex; align-items:center; gap:14px; margin-bottom:10px}
+    .logo{width:74px; height:74px; border-radius:50%; background:#0d2230; display:grid; place-items:center; box-shadow:inset 0 0 0 2px rgba(255,255,255,.08)}
+    .logo svg{width:46px; height:46px}
+    h1{font-size:28px; margin:0 0 6px}
+    .sub{color:var(--muted); font-weight:600; font-size:15px; letter-spacing:.2px}
+    .badges{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 18px}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); font-size:13px}
+    .links{display:grid; gap:12px; margin:14px 0}
+    .btn{
+      display:flex; align-items:center; gap:12px; width:100%; text-decoration:none; color:var(--text);
+      background:var(--btn); border:1px solid rgba(255,255,255,.10); padding:14px 16px; border-radius:var(--radius);
+      transition:transform .06s ease, background .15s ease, border-color .15s ease;
+    }
+    .btn:hover{background:var(--btnHover); border-color:rgba(255,255,255,.16); transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .btn .icon{width:28px; height:28px; display:grid; place-items:center}
+    .btn .ttl{font-size:16px; font-weight:700}
+    .btn .desc{margin-inline-start:auto; color:var(--muted); font-size:13px}
+    .socials{display:flex; gap:10px; margin-top:14px}
+    .socials a{width:44px; height:44px; border-radius:50%; display:grid; place-items:center; text-decoration:none; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.10)}
+    .hr{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.15), transparent); margin:18px 0}
+    .foot{display:flex; justify-content:center; gap:10px; color:var(--muted); font-size:12px}
+    .stamp{display:inline-flex; align-items:center; gap:6px; font-weight:700}
+    .stamp svg{opacity:.9}
+    @media (max-width:420px){
+      .logo{width:66px;height:66px}
+      .logo svg{width:40px;height:40px}
+      h1{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.3 6.9h7.2l-5.8 4.2 2.2 6.9L12 15.8 6.1 20l2.2-6.9-5.8-4.2h7.2L12 2z"/></svg>
+        </div>
+        <div>
+          <h1>زكريا هليب التعليمية</h1>
+          <div class="sub">تسجيل | مراجعات | مذكرات | تذكير بالمواعيد</div>
+        </div>
+      </div>
+
+      <div class="badges">
+        <span class="badge">ديبلوم المستوى الثالث</span>
+        <span class="badge">تحديث مستمر ⏰</span>
+        <span class="badge">جامعة الملك فيصل</span>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="https://wa.me/966535282067" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">📞</span>
+          <span class="ttl">تواصل عبر واتساب</span>
+          <span class="desc">رد سريع</span>
+        </a>
+
+        <a class="btn" href="https://t.me/Zak7117" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">✈️</span>
+          <span class="ttl">قناة تيليجرام</span>
+          <span class="desc">انضم الآن</span>
+        </a>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="socials" aria-label="روابط سريعة">
+        <a href="https://wa.me/966535282067" title="واتساب" target="_blank" rel="noopener" aria-label="واتساب">📞</a>
+        <a href="https://t.me/Zak7117" title="تيليجرام" target="_blank" rel="noopener" aria-label="تيليجرام">✈️</a>
+      </div>
+
+      <div class="hr"></div>
+      <div class="foot">
+        <span class="stamp">صُمِّمت بحب • صفحة روابط</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
