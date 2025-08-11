@@ -3,61 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>زكريا هليب التعليمية</title>
-  <meta name="description" content="صفحة روابط سريعة للوصول إلى واتساب، تيليجرام، والمنصات الاجتماعية." />
+  <title>زيكو هليب التعليميه</title>
+  <meta name="description" content="خدمات أكاديمية مميزة: اسايمنت، امتحانات، واجبات، بروجكت، بحوث، تقارير، شروحات وتلخيصات، سيفي وتصميمات." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg1:#300010; --bg2:#5a0b1f; --card:#1b1b1f; --text:#fff; --muted:#cfcfd6;
-      --accent:#ffd166; --btn:#2a2a30; --btnHover:#3a3a42; --ring:#8a8a94;
-      --shadow:0 10px 30px rgba(0,0,0,.25);
-      --radius:18px;
+      --bg1:#0d2512; --bg2:#1c331c; 
+      --card:#112015; --text:#fffbf0; --muted:#ddd6ae;
+      --gold:#e7c369;
+      --btn:#1b2b1b; --btnHover:#223722; --shadow:0 10px 30px rgba(0,0,0,.35); --radius:18px;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0; min-height:100svh; color:var(--text); font-family:'Cairo', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-      background: radial-gradient(1200px 800px at 50% -10%, var(--bg2), var(--bg1));
-      display:grid; place-items:center; padding:28px 16px;
-    }
-    .wrap{width:min(720px, 100%);}
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:calc(var(--radius) + 8px);
-      box-shadow:var(--shadow);
-      padding:28px 18px 22px; backdrop-filter: blur(6px);
-    }
-    .brand{display:flex; align-items:center; gap:14px; margin-bottom:10px}
-    .logo{width:74px; height:74px; border-radius:50%; background:#0d2230; display:grid; place-items:center; box-shadow:inset 0 0 0 2px rgba(255,255,255,.08)}
-    .logo svg{width:46px; height:46px}
-    h1{font-size:28px; margin:0 0 6px}
-    .sub{color:var(--muted); font-weight:600; font-size:15px; letter-spacing:.2px}
-    .badges{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 18px}
-    .badge{display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); font-size:13px}
+    body{ margin:0; min-height:100svh; color:var(--text); font-family:'Cairo', system-ui; background: radial-gradient(1200px 800px at 50% -10%, var(--bg2), var(--bg1)); display:grid; place-items:center; padding:28px 16px; }
+    .wrap{width:min(980px, 100%);} 
+    .card{ background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); border:1px solid rgba(231,195,105,.25); border-radius:calc(var(--radius) + 8px); box-shadow:var(--shadow); padding:28px 18px 22px; backdrop-filter: blur(6px);}    
+    .brand{display:flex; align-items:center; gap:14px; margin-bottom:6px}
+    .logo{width:92px; height:92px; border-radius:16px; background:#0e1c0f; display:grid; place-items:center; overflow:hidden; box-shadow:inset 0 0 0 2px rgba(231,195,105,.25)}
+    .logo img{width:100%; height:100%; object-fit:cover}
+    h1{font-size:30px; margin:0 0 6px; color:var(--gold)}
+    .tagline{font-weight:800; text-align:center; margin:8px 0 14px; font-size:18px; color:var(--gold)}
+    .banner{border-radius:18px; overflow:hidden; border:1px solid rgba(231,195,105,.25); margin:12px 0 6px}
+    .banner img{width:100%; height:auto; display:block}
     .links{display:grid; gap:12px; margin:14px 0}
-    .btn{
-      display:flex; align-items:center; gap:12px; width:100%; text-decoration:none; color:var(--text);
-      background:var(--btn); border:1px solid rgba(255,255,255,.10); padding:14px 16px; border-radius:var(--radius);
-      transition:transform .06s ease, background .15s ease, border-color .15s ease;
-    }
-    .btn:hover{background:var(--btnHover); border-color:rgba(255,255,255,.16); transform:translateY(-1px)}
-    .btn:active{transform:translateY(0)}
+    .btn{ display:flex; align-items:center; gap:12px; width:100%; text-decoration:none; color:var(--text); background:var(--btn); border:1px solid rgba(231,195,105,.25); padding:14px 16px; border-radius:var(--radius); transition:transform .06s ease, background .15s ease, border-color .15s ease; }
+    .btn:hover{background:var(--btnHover); border-color:rgba(231,195,105,.5); transform:translateY(-1px)}
     .btn .icon{width:28px; height:28px; display:grid; place-items:center}
     .btn .ttl{font-size:16px; font-weight:700}
     .btn .desc{margin-inline-start:auto; color:var(--muted); font-size:13px}
-    .socials{display:flex; gap:10px; margin-top:14px}
-    .socials a{width:44px; height:44px; border-radius:50%; display:grid; place-items:center; text-decoration:none; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.10)}
-    .hr{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.15), transparent); margin:18px 0}
+    .hr{height:1px; background:linear-gradient(90deg, transparent, rgba(231,195,105,.5), transparent); margin:18px 0}
+    .services{display:grid; gap:14px; grid-template-columns: repeat( auto-fill, minmax(220px, 1fr) ); margin:10px 0 6px}
+    .svc{background:rgba(231,195,105,.06); border:1px solid rgba(231,195,105,.25); border-radius:20px; padding:14px; display:flex; flex-direction:column; gap:8px; min-height:140px}
+    .svc .row{display:flex; align-items:center; gap:10px}
+    .svc .ico{font-size:22px; color:var(--gold)}
+    .svc .name{font-weight:800}
+    .svc .en{color:var(--muted); font-size:12px}
+    .svc .go{margin-top:auto; display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); background:#152714; border:1px solid rgba(231,195,105,.35); padding:8px 10px; border-radius:12px}
+    .svc .go small{color:var(--muted)}
+    .socials{display:flex; gap:10px; margin-top:10px}
+    .socials a{width:44px; height:44px; border-radius:50%; display:grid; place-items:center; text-decoration:none; background:rgba(231,195,105,.12); border:1px solid rgba(231,195,105,.25)}
     .foot{display:flex; justify-content:center; gap:10px; color:var(--muted); font-size:12px}
-    .stamp{display:inline-flex; align-items:center; gap:6px; font-weight:700}
-    .stamp svg{opacity:.9}
-    @media (max-width:420px){
-      .logo{width:66px;height:66px}
-      .logo svg{width:40px;height:40px}
-      h1{font-size:24px}
-    }
+    @media (max-width:420px){ .logo{width:80px;height:80px} h1{font-size:26px} }
   </style>
 </head>
 <body>
@@ -65,44 +52,86 @@
     <section class="card">
       <div class="brand">
         <div class="logo" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.3 6.9h7.2l-5.8 4.2 2.2 6.9L12 15.8 6.1 20l2.2-6.9-5.8-4.2h7.2L12 2z"/></svg>
+          <img src="https://drive.google.com/uc?export=view&id=1i5p1Gdlewgv8UOesR92_8DapONMHDX0V" alt="Logo" />
         </div>
         <div>
-          <h1>زكريا هليب التعليمية</h1>
-          <div class="sub">تسجيل | مراجعات | مذكرات | تذكير بالمواعيد</div>
+          <h1>زيكو هليب التعليميه</h1>
         </div>
       </div>
 
-      <div class="badges">
-        <span class="badge">ديبلوم المستوى الثالث</span>
-        <span class="badge">تحديث مستمر ⏰</span>
-        <span class="badge">جامعة الملك فيصل</span>
+      <div class="tagline">🎓 خدمات أكاديمية مميزة 🎓</div>
+      <div class="banner">
+        <img src="https://drive.google.com/uc?export=view&id=1dpamY5DyNkpNzsXXLw2_R47W94VPF7wv" alt="خدمات زيكو هليب"/>
       </div>
 
       <div class="links">
         <a class="btn" href="https://wa.me/966535282067" target="_blank" rel="noopener">
-          <span class="icon" aria-hidden="true">📞</span>
-          <span class="ttl">تواصل عبر واتساب</span>
-          <span class="desc">رد سريع</span>
+          <span class="icon">📞</span>
+          <span class="ttl">واتساب</span>
+          <span class="desc">تواصل مباشر</span>
         </a>
-
         <a class="btn" href="https://t.me/Zak7117" target="_blank" rel="noopener">
-          <span class="icon" aria-hidden="true">✈️</span>
-          <span class="ttl">قناة تيليجرام</span>
-          <span class="desc">انضم الآن</span>
+          <span class="icon">✈️</span>
+          <span class="ttl">تيليجرام</span>
+          <span class="desc">قناة / مراسلة</span>
         </a>
       </div>
 
       <div class="hr"></div>
 
-      <div class="socials" aria-label="روابط سريعة">
-        <a href="https://wa.me/966535282067" title="واتساب" target="_blank" rel="noopener" aria-label="واتساب">📞</a>
-        <a href="https://t.me/Zak7117" title="تيليجرام" target="_blank" rel="noopener" aria-label="تيليجرام">✈️</a>
+      <div class="services">
+        <div class="svc">
+          <div class="row"><span class="ico">①</span><span class="name">الاسايمنت</span></div>
+          <div class="en">Assignments</div>
+          <a class="go" href="https://t.me/+PHBzu9FBWNk1Y2U0" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+        <div class="svc">
+          <div class="row"><span class="ico">②</span><span class="name">الإمتحانات والكويزات</span></div>
+          <div class="en">Exams</div>
+          <a class="go" href="https://t.me/+Vw7P5sZZyB41ZGM0" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+        <div class="svc">
+          <div class="row"><span class="ico">③</span><span class="name">الواجبات</span></div>
+          <div class="en">Homework</div>
+          <a class="go" href="https://t.me/+4jS2H4ZfurI3ZmRk" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+        <div class="svc">
+          <div class="row"><span class="ico">④</span><span class="name">البروجكت</span></div>
+          <div class="en">Projects</div>
+          <a class="go" href="https://t.me/+V6YtMA2P_ekxMjg0" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+        <div class="svc">
+          <div class="row"><span class="ico">⑤</span><span class="name">البحوث</span></div>
+          <div class="en">Research</div>
+          <a class="go" href="https://t.me/+LFKccqB-4UBkYWFk" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+        <div class="svc">
+          <div class="row"><span class="ico">⑥</span><span class="name">التقارير المرحلية والنهائية</span></div>
+          <div class="en">Reports</div>
+          <a class="go" href="https://t.me/+wLp_hu4kbd85MTRk" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+        <div class="svc">
+          <div class="row"><span class="ico">⑦</span><span class="name">شروحات المواد + تلخيصات</span></div>
+          <div class="en">Tutorials & Summaries</div>
+          <a class="go" href="https://t.me/+rV1sdeoWu4hmZDc0" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+        <div class="svc">
+          <div class="row"><span class="ico">⭐</span><span class="name">سيفي احترافي وتصميمات</span></div>
+          <div class="en">CV & Designs</div>
+          <a class="go" href="https://t.me/+QbfovWYncnFlOTg0" target="_blank" rel="noopener">انتقال للخدمة <small>الرابط</small></a>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="socials">
+        <a href="https://wa.me/966535282067" title="واتساب" target="_blank">📞</a>
+        <a href="https://t.me/Zak7117" title="تيليجرام" target="_blank">✈️</a>
       </div>
 
       <div class="hr"></div>
       <div class="foot">
-        <span class="stamp">صُمِّمت بحب • صفحة روابط</span>
+        <span>صُمِّمت بحب • صفحة روابط</span>
       </div>
     </section>
   </main>
